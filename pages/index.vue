@@ -11,7 +11,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData (context) {
+    const { $content, app } = context
+
+    const about = await $content(`${app.i18n.locale}`, 'about').fetch()
+
+    return {
+      about
+    }
+  }
+}
 </script>
 
 <style>

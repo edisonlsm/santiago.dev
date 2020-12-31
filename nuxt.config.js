@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  ssr: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -34,7 +34,23 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/fontawesome',
+      {
+        suffix: true,
+        icons: {
+          solid: [
+            'faEnvelopeSquare'
+          ],
+          brands: [
+            'faGithub',
+            'faLinkedin',
+            'faTwitter'
+          ]
+        }
+      }
+    ]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -60,7 +76,6 @@ export default {
         ],
         langDir: 'locales/',
         defaultLocale: 'en',
-        strategy: 'no_prefix',
         detectBrowserLanguage: false,
         differentDomains: true,
         vueI18n: {
