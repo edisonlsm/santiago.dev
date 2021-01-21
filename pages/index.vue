@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col min-h-full">
+  <div class="flex flex-col min-h-full dark mode-dark bg-white dark:bg-black">
     <Header class="flex-shrink-0 w-full inline-block" />
-    <div class="flex-grow w-full h-full">
-      <article class="prose about m-6">
+    <div class="flex-grow w-full h-full bg-white dark:bg-black">
+      <article class="prose dark:prose-dark about m-6">
         <nuxt-content
           :document="about"
         />
       </article>
-      <article class="prose prose-lg skills m-6">
+      <article class="prose dark:prose-dark prose-lg skills m-6">
         <nuxt-content
           :document="skills"
         />
@@ -33,38 +33,6 @@ export default {
 </script>
 
 <style>
-  .nuxt-content {
-    color: #000;
-    font-family: 'Source Code Pro', monospace;
-  }
-
-  .about .nuxt-content a {
-    text-decoration: none;
-    font-weight: inherit;
-  }
-
-  .about .nuxt-content a:hover {
-    text-decoration: underline;
-  }
-
-  .skills .nuxt-content h4 {
-    margin-top: 0;
-  }
-
-  .skills .nuxt-content a {
-    text-decoration: none;
-    font-weight: inherit;
-  }
-
-  .skills .nuxt-content a:hover {
-    text-decoration: underline;
-  }
-
-  .skills .nuxt-content p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .terminal {
     vertical-align: bottom;
   }

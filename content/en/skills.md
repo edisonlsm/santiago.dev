@@ -1,5 +1,5 @@
-$ iOS Native (+6 years)
+- $ iOS Native (+6 years)
 
-$ Flutter (+2 years)
+- $ Flutter (+2 years)
 
-$ Command Line enthusiast <span class="blink">█</span>
+- $ Command Line enthusiast <span class="blink">█</span>
