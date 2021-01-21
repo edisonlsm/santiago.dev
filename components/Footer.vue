@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer w-full flex items-center justify-between bg-gray-200">
+  <footer class="footer w-full flex items-center justify-between bg-gray-200 py-2-safe">
     <div class="flex-shrink-0 uppercase text-xs mx-4">
       <template v-for="(locale, index) in $i18n.locales">
         <!-- Display a pipe between the locales -->
@@ -37,7 +37,7 @@
         </a>
       </template>
     </div>
-    <div class="flex-grow mx-4 my-2 text-right">
+    <div class="flex-grow mx-4 text-right">
       <a v-for="social in socials" :key="social.id" :href="social.link" class="inline-block ml-2" target="_blank">
         <font-awesome-icon class="fa-1x" :icon="[social.faIconGroup, social.faIconName]" />
       </a>
@@ -52,7 +52,7 @@ export default {
       socials: [
         {
           id: 1,
-          link: 'mailto:edisonluizsm@gmail.com',
+          link: 'mailto:edison@santiago.dev',
           faIconGroup: 'fas',
           faIconName: 'envelope-square'
         },
