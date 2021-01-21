@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer w-full flex items-center justify-between bg-gray-200 py-2-safe">
-    <div class="flex-shrink-0 uppercase text-xs mx-4">
+  <footer class="footer w-full flex items-center justify-between bg-gray-200 pt-3 pb-3-safe lg:pt-2 lg:pb-2-safe">
+    <div class="flex-shrink-0 uppercase text-sm lg:text-xs mx-4">
       <template v-for="(locale, index) in $i18n.locales">
         <!-- Display a pipe between the locales -->
         <span v-if="index > 0" :key="'divider' + locale.code" class="px-1">|</span>
@@ -37,9 +37,12 @@
         </a>
       </template>
     </div>
-    <div class="flex-grow mx-4 text-right">
-      <a v-for="social in socials" :key="social.id" :href="social.link" class="inline-block ml-2" target="_blank">
-        <font-awesome-icon class="fa-1x" :icon="[social.faIconGroup, social.faIconName]" />
+    <div class="flex-grow mx-2 text-right">
+      <a v-for="social in socials" :key="social.id" :href="social.link" class="inline-block px-2 lg:px-2" target="_blank">
+        <!-- For small devices show the icon larger to allow mobile tap -->
+        <font-awesome-icon class="fa-lg inline-block lg:hidden" :icon="[social.faIconGroup, social.faIconName]" />
+        <!-- For larger devices, show the icon smaller -->
+        <font-awesome-icon class="fa-sm hidden lg:inline-block" :icon="[social.faIconGroup, social.faIconName]" />
       </a>
     </div>
   </footer>

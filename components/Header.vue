@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="flex items-center bg-gray-200 py-2-safe">
+    <div class="flex items-center bg-gray-200 pt-2-safe pb-2">
       <div class="flex-grow mx-6">
         <span class="text-4xl">
           Edison Santiago
