@@ -1,5 +1,6 @@
-- $ iOS Nativo (+6 anos)
+iOS Nativo (+6 anos)
+Flutter (+2 anos)
+Entusiasta de Linha de Comando
 
-- $ Flutter (+2 anos)
-
-- $ Entusiasta de Linha de Comando <span class="blink">█</span>
+Digite qualquer comando abaixo:
+(Para uma lista dos comandos existentes, digite "ajuda")

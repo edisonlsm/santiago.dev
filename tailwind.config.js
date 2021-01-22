@@ -24,6 +24,10 @@ module.exports = {
             'a:hover': {
               textDecoration: 'underline'
             },
+            ul: {
+              marginTop: 0,
+              marginBottom: 0
+            },
             'ul > li': {
               marginTop: 0,
               marginBottom: 0,
@@ -32,9 +36,9 @@ module.exports = {
             'ul > li::before': {
               content: ''
             },
-            'li > p': {
-              marginTop: 0,
-              marginBottom: 0
+            ' > ul > li > p': {
+              marginTop: '0 !important',
+              marginBottom: '0 !important'
             }
           }
         },
