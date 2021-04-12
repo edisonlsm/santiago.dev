@@ -3,7 +3,7 @@
     <div class="flex items-center bg-gray-200 pt-2-safe pb-2">
       <span class="ml-6 logo">Σ$_</span>
       <div class="flex-grow ml-4 mr-6">
-        <span class="text-4xl">Edison Santiago</span>
+        <span class="text-2xl">Edison Santiago</span>
         <span class="text-md inline-block">
           {{ $t('career-description') }}
         </span>

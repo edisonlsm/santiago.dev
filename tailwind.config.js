@@ -36,6 +36,10 @@ module.exports = {
             'ul > li::before': {
               content: ''
             },
+            'ul > li > p': {
+              marginTop: '0 !important',
+              marginBottom: '0 !important'
+            },
             ' > ul > li > p': {
               marginTop: '0 !important',
               marginBottom: '0 !important'

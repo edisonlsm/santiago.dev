@@ -7,8 +7,10 @@
           :document="currentDocument"
         />
       </article>
-      <ul v-for="(line, index) of terminalLines" :key="index">
-        <li><p>$ {{ line }}</p></li>
+      <ul>
+        <li v-for="(line, index) of terminalLines" :key="index">
+          <p>$ {{ line }}</p>
+        </li>
       </ul>
       <ul>
         <li>
