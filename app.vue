@@ -5,3 +5,7 @@
     <Footer />
   </div>
 </template>
+
+<script setup>
+  const { setLocale } = useI18n()
+</script>
