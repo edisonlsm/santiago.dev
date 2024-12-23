@@ -1,11 +1,19 @@
 <template>
   <footer class="flex-none bg-dark-grey text-light-grey font-bold p-2 flex justify-between">
     <div>
-      <button class="inline-block hover:underline" @click="setLocale('en')">EN</button>
-      &nbsp;|&nbsp; 
-      <button class="inline-block hover:underline" @click="setLocale('pt')">BR</button>
-    </div>
+      <div v-for="(locale, index) in $i18n.locales" :key="locale.code" class="inline-block">
+        <!-- Display a pipe between the locales -->
+        <span v-if="index > 0" class="px-1">|</span>
 
+        <!-- The selected locale is not clickable -->
+        <span v-if="locale.code === $i18n.locale" class="font-bold underline">
+          {{ locale.code }}
+        </span>
+        <span v-else class="cursor-pointer hover:underline" @click="setLocale(locale.code)">
+          {{ locale.code }}
+        </span>
+      </div>
+    </div>
     <div class="flex space-x-2">
       <a v-for="network in socialNetworks" :href="network.url" :key="network.name"
         target="_blank" rel="noopener noreferrer" 
@@ -14,7 +22,6 @@
           :is="getSocialNetworkIcon(network.iconName)" />
       </a>
     </div>
-
   </footer>
 </template>
 

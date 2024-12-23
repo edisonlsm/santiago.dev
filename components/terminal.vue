@@ -2,7 +2,12 @@
   <div class="flex-grow overflow-y-scroll max-h-screen text-terminal-green font-noto-mono leading-normal p-2" @click="focusTerminalInput">
     <ul class="max-w-prose">
       <li v-for="text in defaultTexts">
-        {{ $t(text)}}<br /><br />
+        <i18n-t :keypath="text" tag="p">
+          <template v-if="text === 'currentWork'" v-slot:stapp>
+            <a class="underline cursor-pointer" href="https://stapp.studio" target="_blank" rel="noopener noreferrer">Stapp Studio</a>
+          </template>
+        </i18n-t>
+        <br />
       </li>
       <li>{{ $t('typeACommand')}}</li>
       <li>{{ $t('commandList')}}</li>
@@ -26,6 +31,10 @@ const defaultTexts = computed(() => [
 
 function focusTerminalInput() {
   document.getElementById('terminalInput').focus();
+}
+
+function enterPressed() {
+  alert('enter pressed!')
 }
 
 </script>

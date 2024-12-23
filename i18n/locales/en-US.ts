@@ -2,8 +2,8 @@ export default defineI18nLocale(async locale => {
   return {
     hello: "Hello There!",
     whoAmI: "I'm Edison, a 30 years old geek from Curitiba, Brazil who is always looking forward to improve peoples lives with technology. Software is turning the world into a better place.",
-    whatIDo: "I create apps for mobile phones since the beginning of my professional career, which now accounts for over 6 years. I also work on everything else that is needed to make a mobile app alive, like APIs, databases, admin panels and so on.",
-    currentWork: "I'm currently developing experiences {'@'} Stapp Studio. https://stapp.studio",
+    whatIDo: "I create apps for mobile phones since the beginning of my professional career, which now accounts for over 10 years. I also work on everything else that is needed to make a mobile app alive, like APIs, databases, admin panels and so on.",
+    currentWork: "I'm currently developing experiences {'@'} {stapp}.",
     typeACommand: "Type a command below:",
     commandList: "(For a list of available commands, type \"help\")"
   }

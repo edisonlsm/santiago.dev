@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         file: 'en-US.ts'
       },
       {
-        code: 'pt',
+        code: 'pt-br',
         file: 'pt-BR.ts'
       }
     ],
