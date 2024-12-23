@@ -1,0 +1,25 @@
+{
+  "hello": "Olá!",
+  "whoAmI": "Sou o Edison, um curitibano de 30 anos que está sempre pensando em como usar a tecnologia para melhorar a vida das pessoas. A tecnologia está tornando o mundo um lugar muito melhor.",
+  "whatIDo": "Crio aplicativos para celular desde o começo da minha carreira, que já dura mais de 10 anos. Também trabalho com tudo que é necessário para colocar um aplicativo no ar, como APIs, bancos de dados, painéis administrativos e etc.",
+  "currentWork": "Atualmente, estou desenvolvendo experiências na {stapp}.",
+  "typeACommand": "Digite um comando abaixo:",
+  "commandList": "(Para uma lista dos comandos disponíveis, digite \"help\")",
+  "commands": {
+    "help": {
+      "code": "ajuda",
+      "info": "Lista os comandos disponíveis",
+      "text": "Essa é a ajuda"
+    },
+    "skills": {
+      "code": "skills",
+      "info": "Ver as minhas habilidades",
+      "text": "- **Mais de 10 anos** trabalhando com desenvolvimento _mobile_\u000A- **Mais de 4 anos** trabalhando especificamente com Flutter\u000A- Experiência com front em JavaScript/TypeScript (Vue/Nuxt)\u000A- Experiência com backend em JavaScript/TypeScript (Cloudflare Workers)\u000A- Construção de CI/CD para apoio ao desenvolvimento mobile (Google Cloud Build, GitHub Actions, Jenkins)"
+    },
+    "education": {
+      "code": "education",
+      "info": "Ver a minha educação",
+      "text": "\u000ATecnólogo em Análise e Desenvolvimento de Sistemas pela UNiversidade Federal do Paraná\u000A"
+    }
+  }
+}

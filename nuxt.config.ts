@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/mdc'
+    '@nuxtjs/mdc',
+    '@nuxt/content'
   ],
   vite: {
     plugins: [
@@ -16,19 +17,27 @@ export default defineNuxtConfig({
     ]
   },
   i18n: {
+    experimental: {
+      typedOptionsAndMessages: 'all'
+    },
     strategy: 'no_prefix',
     locales: [
       {
         code: 'en',
-        file: 'en-US.ts'
+        file: 'en-US.json'
       },
       {
         code: 'pt-br',
-        file: 'pt-BR.ts'
+        file: 'pt-BR.json'
       }
     ],
     lazy: true,
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+
+  },
+  content: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt-br']
   },
   googleFonts: {
     families: {

@@ -1,0 +1,5 @@
+---
+description: 'Formal education'
+---
+
+## Education

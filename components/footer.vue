@@ -9,7 +9,7 @@
         <span v-if="locale.code === $i18n.locale" class="font-bold underline">
           {{ locale.code }}
         </span>
-        <span v-else class="cursor-pointer hover:underline" @click="setLocale(locale.code)">
+        <span v-else class="cursor-pointer hover:underline" @click="changeLocale(locale.code)">
           {{ locale.code }}
         </span>
       </div>
@@ -25,8 +25,9 @@
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
   const { setLocale } = useI18n()
+  import type { Locale } from '@intlify/core-base'
 
   const socialNetworks = ref([
     {
@@ -51,5 +52,11 @@
     },
   ])
 
-  const getSocialNetworkIcon = (name) => defineAsyncComponent(() => import(`../assets/icons/${name}.svg?component`))
+  const getSocialNetworkIcon = (name: string) => defineAsyncComponent(() => import(`../assets/icons/${name}.svg?component`))
+
+  async function changeLocale(locale: Locale) {
+    await setLocale(locale)
+    // Reload everything when we change the locale
+    await refreshNuxtData()
+  }
 </script>
