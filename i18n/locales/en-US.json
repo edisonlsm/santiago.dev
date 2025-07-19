@@ -5,21 +5,16 @@
   "currentWork": "I'm currently developing experiences {'@'} {stapp}.",
   "typeACommand": "Type a command below:",
   "commandList": "(For a list of available commands, type \"help\")",
+  "availableCommands": "Available commands",
+  "commandNotFound": "command not found",
   "commands": {
     "help": {
       "code": "help",
-      "info": "List the available commands",
-      "text": "This is help"
+      "info": "List the available commands"
     },
-    "skills": {
-      "code": "skills",
-      "info": "Show my skills",
-      "text": "**10+** years of experience with *mobile* development\u000A4+ years of experience with Flutter"
-    },
-    "education": {
-      "code": "education",
-      "info": "Show my skills",
-      "text": "10+ years of experience with mobile development\u000A4+ years of experience with Flutter"
+    "exit": {
+      "code": "exit",
+      "info": "Exit the application"
     }
   }
 }
